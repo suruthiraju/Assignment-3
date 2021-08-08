@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class ="col">
+            <h3>Basic diectives</h3>
+        </div>
+        <hr>
+        <div class="col">
+            <button class="btn btn-primary"  (click) = "onChangeText()">display details</button>
+            <p *ngIf = "textDisplayed else nodisplay">"Secret Password = tuna "</p>
+            <ng-template #nodisplay>
+                <p></p></ng-template>
+        </div>
+        <!-- <div>
+            <p *ngFor="let time of times; let i =index"
+            [ngStyles] = "{'morethan5' : i >= 5 }" [ngclass] = "{'class5' : i >= 5}"> {{timestamp}}</p>
+        </div> -->
+    </div>
+</div>
